@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop top-rated headphones, smartwatches, keyboards and more at VoltCart.">
+    <title>VoltCart | Smart Gadgets &amp; Everyday Tech</title>
+
+    <!-- Bootstrap 5.3.0-alpha3 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Custom CSS (overrides Bootstrap) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+
+<body class="bg-white">
+    <!-- ============ NAVIGATION ============ -->
+    <div class="top-bar">
+        Free shipping nationwide on orders over ₱1,500 &bull; Use code <strong>VOLT10</strong> for 10% off your first order
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-vc sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="VoltCart logo">Volt<span>Cart</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="product.html" class="cart-btn d-none d-lg-inline-block" aria-label="Shopping cart">
+                        Cart <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ BANNER ============ -->
+        <section class="banner p-0">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item banner-1 active">
+                        <img src="images/banner-1.svg" class="banner-image" alt="VoltCart featured promotion 1">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <span class="banner-tag">New season sale</span>
+                                <h1>Sound that moves<br>with you</h1>
+                                <p>Up to 30% off premium headphones, earbuds and speakers. Limited stocks only.</p>
+                                <a href="product.html#audio" class="btn btn-vc me-2">Shop Audio</a>
+                                <a href="about.html" class="btn btn-vc-outline">Our Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-2">
+                        <img src="images/banner-2.svg" class="banner-image" alt="VoltCart featured promotion 2">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <span class="banner-tag">Just arrived</span>
+                                <h1>Smarter days start<br>on your wrist</h1>
+                                <p>Meet the Pulse Smartwatch S2 and Halo Fitness Band: track, train and recover better.</p>
+                                <a href="product.html#wearables" class="btn btn-vc me-2">Shop Wearables</a>
+                                <a href="contact.html" class="btn btn-vc-outline">Ask an Expert</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-3">
+                        <img src="images/banner-3.svg" class="banner-image" alt="VoltCart featured promotion 3">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <span class="banner-tag">Adventure ready</span>
+                                <h1>Capture it all<br>in 4K</h1>
+                                <p>The Snap 4K Action Camera is waterproof, stabilised and ready for your next trip.</p>
+                                <a href="product.html#wearables" class="btn btn-vc me-2">Shop Cameras</a>
+                                <a href="product.html" class="btn btn-vc-outline">View All Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FEATURES ============ -->
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <div class="feature-item">
+                            <div>
+                                <h6>Free Shipping</h6>
+                                <small>On orders over ₱1,500</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="feature-item">
+                            <div>
+                                <h6>1-Year Warranty</h6>
+                                <small>On all gadgets</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="feature-item">
+                            <div>
+                                <h6>7-Day Returns</h6>
+                                <small>Hassle-free refunds</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="feature-item">
+                            <div>
+                                <h6>24/7 Support</h6>
+                                <small>Chat, call or email</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TOP 10 PRODUCTS ============ -->
+        <section id="top-products">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Customer favourites</span>
+                    <h2>Top 10 Best-Selling Products</h2>
+                    <p>Our most loved gadgets, ranked by sales and customer ratings this month.</p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4">
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Best Seller</span>
+                                <span class="product-rank">#1</span>
+                                <img src="images/p07-powerbank.svg" alt="Vault 20,000mAh Power Bank">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Power</span>
+                                <h3 class="card-title">Vault 20,000mAh Power Bank</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(633)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱1,599</div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Vault 20,000mAh Power Bank to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Best Seller</span>
+                                <span class="product-rank">#2</span>
+                                <img src="images/p01-headphones.svg" alt="Aurora Wireless Headphones">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Audio</span>
+                                <h3 class="card-title">Aurora Wireless Headphones</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(482)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱3,499<del>₱4,299</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Aurora Wireless Headphones to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Top Rated</span>
+                                <span class="product-rank">#3</span>
+                                <img src="images/p03-speaker.svg" alt="Nimbus Bluetooth Speaker">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Audio</span>
+                                <h3 class="card-title">Nimbus Bluetooth Speaker</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(411)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱1,899</div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Nimbus Bluetooth Speaker to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-rank">#4</span>
+                                <img src="images/p05-mouse.svg" alt="Glide Wireless Mouse">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Work & Desk</span>
+                                <h3 class="card-title">Glide Wireless Mouse</h3>
+                                <div class="rating mb-2">
+                                    ★★★★☆
+                                    <span>(520)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱899</div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Glide Wireless Mouse to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-rank">#5</span>
+                                <img src="images/p09-backpack.svg" alt="Trek Laptop Backpack">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Work & Desk</span>
+                                <h3 class="card-title">Trek Laptop Backpack</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(342)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱1,799</div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Trek Laptop Backpack to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge badge-dark">New</span>
+                                <span class="product-rank">#6</span>
+                                <img src="images/p04-keyboard.svg" alt="Orbit Mechanical Keyboard">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Work & Desk</span>
+                                <h3 class="card-title">Orbit Mechanical Keyboard</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(298)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱2,799<del>₱3,299</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Orbit Mechanical Keyboard to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Sale</span>
+                                <span class="product-rank">#7</span>
+                                <img src="images/p02-smartwatch.svg" alt="Pulse Smartwatch S2">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Wearables</span>
+                                <h3 class="card-title">Pulse Smartwatch S2</h3>
+                                <div class="rating mb-2">
+                                    ★★★★☆
+                                    <span>(356)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱4,999<del>₱5,999</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Pulse Smartwatch S2 to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Sale</span>
+                                <span class="product-rank">#8</span>
+                                <img src="images/p08-earbuds.svg" alt="Echo Buds Pro">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Audio</span>
+                                <h3 class="card-title">Echo Buds Pro</h3>
+                                <div class="rating mb-2">
+                                    ★★★★☆
+                                    <span>(274)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱2,199<del>₱2,699</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Echo Buds Pro to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge badge-dark">Hot</span>
+                                <span class="product-rank">#9</span>
+                                <img src="images/p10-camera.svg" alt="Snap 4K Action Camera">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Cameras</span>
+                                <h3 class="card-title">Snap 4K Action Camera</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(208)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱5,499<del>₱6,499</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Snap 4K Action Camera to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-badge">Sale</span>
+                                <span class="product-rank">#10</span>
+                                <img src="images/p12-charger.svg" alt="Flux 65W GaN Charger">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="product-category">Power</span>
+                                <h3 class="card-title">Flux 65W GaN Charger</h3>
+                                <div class="rating mb-2">
+                                    ★★★★★
+                                    <span>(251)</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-auto">
+                                    <div class="price">₱1,199<del>₱1,499</del></div>
+                                    <button type="button" class="btn btn-vc-dark btn-sm" aria-label="Add Flux 65W GaN Charger to cart">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="product.html" class="btn btn-vc">View Full Catalog &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Happy customers</span>
+                    <h2>What Our Customers Say</h2>
+                    <p>Over 12,000 orders delivered and a 4.8 average rating. Here's what shoppers are telling us.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <span class="quote-icon">&ldquo;</span>
+                            <div class="stars">★★★★★</div>
+                            <p>The Aurora headphones are unbelievable for the price. Noise cancelling works great on my MRT commute and the battery lasts all week. Delivery took only two days!</p>
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <img src="images/avatar-1.svg" alt="Maria Santos">
+                                <div>
+                                    <h6>Maria Santos</h6>
+                                    <small>Graphic Designer, Quezon City</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <span class="quote-icon">&ldquo;</span>
+                            <div class="stars">★★★★★</div>
+                            <p>Bought the Orbit keyboard and Glide mouse as a bundle. Packaging was neat, everything was genuine, and customer support helped me pick the right switches. Will order again.</p>
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <img src="images/avatar-2.svg" alt="Jerome Dela Cruz">
+                                <div>
+                                    <h6>Jerome Dela Cruz</h6>
+                                    <small>Software Engineer, Cebu</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <span class="quote-icon">&ldquo;</span>
+                            <div class="stars">★★★★★</div>
+                            <p>My Snap 4K camera survived an entire island-hopping trip, splashes and all. Footage is crisp and steady. VoltCart is now my go-to shop for gear.</p>
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <img src="images/avatar-3.svg" alt="Rhea Villanueva">
+                                <div>
+                                    <h6>Rhea Villanueva</h6>
+                                    <small>Travel Vlogger, Davao</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GALLERY ============ -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Inspiration</span>
+                    <h2>Gallery: Gadgets in Real Life</h2>
+                    <p>Get ideas for your next setup, commute or adventure with our community favourites.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-1.svg" alt="Studio Sessions">
+                            <div class="gallery-overlay">
+                                <h6>Studio Sessions</h6>
+                                <small>Headphones &amp; audio</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-2.svg" alt="Desk Setup Goals">
+                            <div class="gallery-overlay">
+                                <h6>Desk Setup Goals</h6>
+                                <small>Keyboards &amp; accessories</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-3.svg" alt="Cozy Night Lighting">
+                            <div class="gallery-overlay">
+                                <h6>Cozy Night Lighting</h6>
+                                <small>Lamps &amp; decor</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-4.svg" alt="On the Move">
+                            <div class="gallery-overlay">
+                                <h6>On the Move</h6>
+                                <small>Bags &amp; travel gear</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-5.svg" alt="Weekend Vibes">
+                            <div class="gallery-overlay">
+                                <h6>Weekend Vibes</h6>
+                                <small>Portable speakers</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-6.svg" alt="Adventure Mode">
+                            <div class="gallery-overlay">
+                                <h6>Adventure Mode</h6>
+                                <small>Action cameras</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-7.svg" alt="Fit &amp; Connected">
+                            <div class="gallery-overlay">
+                                <h6>Fit &amp; Connected</h6>
+                                <small>Smartwatches</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-grid-item">
+                        <a href="product.html" class="gallery-item">
+                            <img src="images/gallery-8.svg" alt="Wireless Freedom">
+                            <div class="gallery-overlay">
+                                <h6>Wireless Freedom</h6>
+                                <small>True wireless earbuds</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Volt<span class="text-orange">Cart</span></h5>
+                    <p>Your one-stop shop for smart gadgets, audio gear and everyday tech. Honest prices, genuine
+                        products and friendly support since 2019.</p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="TikTok">TikTok</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5>Shop</h5>
+                    <ul class="footer-links">
+                        <li><a href="product.html#audio">Audio</a></li>
+                        <li><a href="product.html#wearables">Wearables &amp; Cameras</a></li>
+                        <li><a href="product.html#desk">Work &amp; Desk</a></li>
+                        <li><a href="product.html#power">Power &amp; Charging</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 newsletter">
+                    <h5>Get 10% off your first order</h5>
+                    <p>Subscribe for new arrivals, exclusive deals and tech tips. No spam, ever.</p>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address"
+                                aria-label="Email address" required>
+                            <button class="btn btn-vc" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small mt-3 mb-0">Lockong, Otucan Norte, Bauko Mt.Province</p>
+                    <p class="small mb-0">hello@voltcart.example</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS (local) -->
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>
